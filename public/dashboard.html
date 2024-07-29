@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <div class="form-container">
+            <h2>Add New Item</h2>
+            <form id="itemForm">
+                <input type="text" id="itemname" placeholder="Item Name" required>
+                <textarea id="details" placeholder="Details" required></textarea>
+                <button type="submit">Add Item</button>
+                <div id="formMessage"></div>
+            </form>
+        </div>
+        <div class="item-list">
+            <h2>Item List</h2>
+            <ul id="itemList"></ul>
+        </div>
+    </div>
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>

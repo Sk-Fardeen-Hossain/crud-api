@@ -1,0 +1,79 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Left Section Styling */
+.left-section {
+    width: 30%;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Right Section Styling */
+.right-section {
+    width: 70%;
+    padding: 20px;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Admin Login Button Styling */
+.option {
+    margin-bottom: 20px;
+}
+
+.admin-login {
+    display: block;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-login:hover {
+    background-color: #0056b3;
+}
+
+/* Bootstrap Card Styling */
+.card {
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+}
